@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AgeAfter10Years
+{
+    class AgeAfter10Years
+    {
+        static void Main(string[] args)
+        {
+            DateTime today = DateTime.Now; 
+
+
+            Console.Write("Write down your Birthday YYYY-MM-DD: "); 
+            DateTime date = DateTime.Parse(Console.ReadLine()); 
+
+            Console.WriteLine("Your age now: " + (today.Year - date.Year)); 
+            Console.WriteLine("Your age after 10 years: " + (today.Year - date.Year + 10)); 
+
+
+        }
+    }
+}
